@@ -29,7 +29,7 @@ Subscriptions to {{organization.printable_name}}
                 <a id="download-registered" href="{{registered.urls.download}}?q=[[filterExpr]]" class="btn btn-default pull-right" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
             </div>
             <div class="table-responsive">
-            <table class="table table-condensed table-striped" style="width:100%">
+            <table class="table table-sm table-striped" style="width:100%">
                 <thead>
                     <tr>
                         <th>Full name</th>
@@ -83,7 +83,7 @@ Subscriptions to {{organization.printable_name}}
     <a id="download-{{tab.slug}}" href="{{tab.urls.download}}?q=[[filterExpr]]" class="btn btn-default pull-right" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
 </div>
 <div class="table-responsive">
-<table class="table table-condensed table-striped">
+<table class="table table-sm table-striped">
     <thead>
         <tr ng-show="dir.organization">
             <th>Subscriber<button class="btn-link btn-sort" ng-click="sortBy('organization')"><i class="fa fa-sort[[dir.organization ? ('-' + dir.organization) : '']]"></i></button></th>

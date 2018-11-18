@@ -9,7 +9,7 @@
 <a id="download" href="{{urls.provider.download_coupons}}?q=[[filterExpr]]" class="btn btn-default" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
     </div>
     <div class="table-responsive">
-    <table id="coupon-list" class="table table-condensed table-striped" >
+    <table id="coupon-list" class="table table-sm table-striped" >
         <thead>
         <tr>
             <th>Code<button class="btn-link btn-sort" ng-click="sortBy('code')" data-trip data-trip-index="5" data-trip-content="<p>Sort coupons by ascending and descending order.</p>" data-trip-position="s"><i class="fa fa-sort[[dir.code ? ('-' + dir.code) : '']]"></i></button></th>
