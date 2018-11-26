@@ -16,18 +16,18 @@
           <span class="date" uib-datepicker-popup="[[format]]" ng-model="params.start_at" is-open="opened.start_at" ng-required="true" close-text="Close">[[params.start_at | date : mediumDate]]
           </span>
           <span>
-            <button type="button" class="btn btn-default" ng-click="open($event, 'start_at')"><i class="fa fa-calendar"></i></button>
+            <button type="button" class="btn btn-secondary" ng-click="open($event, 'start_at')"><i class="fa fa-calendar"></i></button>
           </span>
           <span>To</span>
           <span class="date" uib-datepicker-popup="[[format]]" ng-model="params.ends_at" is-open="opened.ends_at" ng-required="true" close-text="Close">[[params.ends_at | date : mediumDate]]</span>
           <span>
-            <button type="button" class="btn btn-default" ng-click="open($event, 'ends_at')"><i class="fa fa-calendar"></i></button>
+            <button type="button" class="btn btn-secondary" ng-click="open($event, 'ends_at')"><i class="fa fa-calendar"></i></button>
           </span>
           <div style="display:inline-block;">
             <label>Filter</label> <input type="text" ng-model="filterExpr" ng-change="filterList(filterExpr)" />
           </div>
           <div class="pull-right">
-            <a id="download" href="{{download_url}}?q=[[filterExpr]]&start_at=[[params.start_at]]&ends_at=[[params.ends_at]]" class="btn btn-default" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
+            <a id="download" href="{{download_url}}?q=[[filterExpr]]&start_at=[[params.start_at]]&ends_at=[[params.ends_at]]" class="btn btn-secondary" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
           </div>
         </div>
         <table class="table table-striped">

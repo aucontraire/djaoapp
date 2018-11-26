@@ -6,7 +6,7 @@
         <div class="input-group">
           <input type="text" class="form-control" class="date" uib-datepicker-popup="[[format]]" ng-model="params.start_at" is-open="opened.start_at" ng-required="true" close-text="Close" ng-cloak />
           <span class="input-group-btn">
-            <button type="button" class="btn btn-default" ng-click="open($event, 'start_at')"><i class="fa fa-calendar"></i></button>
+            <button type="button" class="btn btn-secondary" ng-click="open($event, 'start_at')"><i class="fa fa-calendar"></i></button>
           </span>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <div class="input-group">
           <input type="text" class="form-control" class="date" uib-datepicker-popup="[[format]]" ng-model="params.ends_at" is-open="opened.ends_at" ng-required="true" close-text="Close" ng-cloak />
           <span class="input-group-btn">
-            <button type="button" class="btn btn-default" ng-click="open($event, 'ends_at')"><i class="fa fa-calendar"></i></button>
+            <button type="button" class="btn btn-secondary" ng-click="open($event, 'ends_at')"><i class="fa fa-calendar"></i></button>
           </span>
         </div>
       </div>
@@ -24,7 +24,7 @@
         <input class="form-control" type="text" ng-model="filterExpr" ng-change="filterList(filterExpr)" />
       </div>
       <div class="pull-right">
-        <a id="download" href="{{download_url}}?q=[[filterExpr]]&start_at=[[params.start_at]]&ends_at=[[params.ends_at]]" class="btn btn-default" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
+        <a id="download" href="{{download_url}}?q=[[filterExpr]]&start_at=[[params.start_at]]&ends_at=[[params.ends_at]]" class="btn btn-secondary" role="button"><i class="fa fa-cloud-download"></i> CSV Download</a>
       </div>
     </form>
     <div class="table-responsive">

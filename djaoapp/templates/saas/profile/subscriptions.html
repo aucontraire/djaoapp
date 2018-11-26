@@ -53,7 +53,7 @@
    <td><a href="[[entry.plan.app_url]][[entry.organization.slug]]/[[entry.plan.slug]]/">[[entry.plan.title]]</a></td>
    <td class="date" uib-datepicker-popup="[[format]]" ng-model="entry.ends_at" is-open="entry.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close">
        <span ng-if="entry.editable">
-           <button type="button" class="btn btn-default" ng-click="open($event, entry)"><i class="fa fa-calendar"></i></button>
+           <button type="button" class="btn btn-secondary" ng-click="open($event, entry)"><i class="fa fa-calendar"></i></button>
        </span>
        <span>
            [[entry.ends_at ? (entry.ends_at | date : mediumDate) : "Never"]]
@@ -124,7 +124,7 @@ Are you sure you want to continue?
             <div class="modal-footer">
                 <button id="cancel-unsubscribe"
                         data-dismiss="modal"
-                        class="btn btn-default">Cancel</button>
+                        class="btn btn-secondary">Cancel</button>
                 <button type="submit" id="unsubscribe-btn"
                         data-dismiss="modal"
                         class="btn btn-danger"

@@ -6,11 +6,11 @@
 <div ng-app="saasApp" ng-cloak>
     <div ng-controller="BalanceListCtrl">
         <div class="date-chooser pull-right">
-          <a id="download" class="btn btn-default" href="{{urls.download_balances}}?start_at=[[params.start_at]]&ends_at=[[params.ends_at]]" role="button"><i class="fa fa-cloud-download"></i> Download</a>
+          <a id="download" class="btn btn-secondary" href="{{urls.download_balances}}?start_at=[[params.start_at]]&ends_at=[[params.ends_at]]" role="button"><i class="fa fa-cloud-download"></i> Download</a>
           <span>To</span>
           <span class="date" uib-datepicker-popup="[[format]]" ng-model="ends_at" is-open="opened.ends_at" datepicker-options="dateOptions" ng-required="true" close-text="Close" datepicker-mode="'month'" max-date="maxDate" show-button-bar="false" data-trip data-trip data-trip-index="2" data-trip-content="<p>Look back through time.</p>" data-trip-position="s">[[params.ends_at | date : mediumDate]]</span>
           <span>
-            <button type="button" class="btn btn-default" ng-click="open($event, 'ends_at')"><i class="fa fa-calendar"></i></button>
+            <button type="button" class="btn btn-secondary" ng-click="open($event, 'ends_at')"><i class="fa fa-calendar"></i></button>
           </span>
         </div>
         <table class="table table-condensed table-striped">
@@ -41,7 +41,7 @@
             <tbody saas-dnd-list="balances" ng-cloak ng-show="balances.$resolved && balances.table.length > 0">
                 <tr id="balance-[[row.rank]]" ng-repeat="row in balances.table" ng-cloak>
                     <td>
-                        <div class="btn btn-default btn-sm">
+                        <div class="btn btn-secondary btn-sm">
                             <i class="fa fa-bars"></i></div>
                     </td>
                     <td>
